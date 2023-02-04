@@ -10,6 +10,8 @@
 window.addEventListener('DOMContentLoaded', event => {
     // Navbar shrink function
     var navbarShrink = function () {
+        let logo = document.getElementById("toplogo")
+        console.log(logo)
         const navbarCollapsible = document.body.querySelector('#mainNav');
         if (!navbarCollapsible) {
             return;
@@ -18,6 +20,7 @@ window.addEventListener('DOMContentLoaded', event => {
             navbarCollapsible.classList.remove('navbar-shrink')
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
+
         }
 
     };
@@ -61,7 +64,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
 function submitEmail() {
-  sender = document.getElementById('email').value
+  sender = document.getElementById( 'email').value
   console.log('submitting email '+ sender)
   let form = new FormData();
   form.append('email',sender);
