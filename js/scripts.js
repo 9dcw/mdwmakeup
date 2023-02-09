@@ -11,7 +11,6 @@ window.addEventListener('DOMContentLoaded', event => {
     // Navbar shrink function
     var navbarShrink = function () {
         let logo = document.getElementById("toplogo")
-        console.log(logo)
         const navbarCollapsible = document.body.querySelector('#mainNav');
         if (!navbarCollapsible) {
             return;
@@ -68,9 +67,11 @@ function submitEmail() {
   console.log('submitting email '+ sender)
   let form = new FormData();
   form.append('email',sender);
+  form.append("fsid","s4811675942585");
   u = 'https://meaningful-texting-aqtiusbaaq-uc.a.run.app/email_signup'
   u2 = 'https://harvesting.ninja/mdw_contact_form'
-  fetch(u2, {
+  u3='https://bitqueues.com/websitecontactform/submit.php'
+  txt = fetch(u3, {
       method: 'POST',
       body: form
   })
@@ -86,6 +87,7 @@ function submitEmail() {
         console.log('error ' + String(error))
         }
       )
+      console.log(txt)
 }
 
 
