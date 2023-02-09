@@ -78,7 +78,11 @@ function submitEmail() {
       .then(function(response) {
 
           console.log('received clip')
-          document.getElementById('submitSuccessMessage').style.display='inline'
+          let el = document.getElementById('submitSuccessMessage')
+          console.log(el.className)
+          el.className='text-success'
+          console.log(el.className)
+
           return response.text()
       } )
       .catch(function(error) {
