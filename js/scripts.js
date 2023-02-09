@@ -71,7 +71,7 @@ function submitEmail() {
   u = 'https://meaningful-texting-aqtiusbaaq-uc.a.run.app/email_signup'
   u2 = 'https://harvesting.ninja/mdw_contact_form'
   u3='https://bitqueues.com/websitecontactform/submit.php'
-  txt = fetch(u3, {
+  txt = fetch(u2, {
       method: 'POST',
       body: form
   })
