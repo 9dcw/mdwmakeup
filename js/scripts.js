@@ -67,7 +67,7 @@ function submitEmail() {
   console.log('submitting email '+ sender)
   let form = new FormData();
   form.append('email',sender);
-  form.append("fsid","s4811675942585");
+  //form.append("fsid","s4811675942585");
   u = 'https://meaningful-texting-aqtiusbaaq-uc.a.run.app/email_signup'
   u2 = 'https://harvesting.ninja/mdw_contact_form'
   u3='https://bitqueues.com/websitecontactform/submit.php'
