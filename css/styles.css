@@ -3031,8 +3031,8 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #FFFFFF;
-  background-color: #000000;
+  color: #000000;
+  background-color: #FFFFFF;
   border-color: #000000;
 }
 .btn-primary:hover {
@@ -11357,7 +11357,7 @@ hr.divider-light {
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
-    font-family: "Didot", serif; 
+    font-family: "Didot", serif;
 
   }
   #mainNav .navbar-brand:hover {
